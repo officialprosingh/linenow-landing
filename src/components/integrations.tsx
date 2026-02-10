@@ -1,6 +1,6 @@
 export function Integrations() {
   return (
-    <section className="py-16 border-y border-ln-slate-navy/50 bg-[#030304]">
+    <section className="py-16 border-y border-ln-slate-navy/50 bg-ln-bg">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <p className="text-sm font-semibold text-ln-subtext mb-12 uppercase tracking-[0.2em]">
           Integrating with your tech stack
@@ -9,7 +9,7 @@ export function Integrations() {
           {/* Shopify */}
           <div className="flex items-center justify-center transition-all duration-300">
             <svg
-              className="h-8 w-auto fill-white"
+              className="h-8 w-auto fill-ln-text-color"
               viewBox="0 0 162 186"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -20,7 +20,7 @@ export function Integrations() {
           {/* SAP */}
           <div className="flex items-center justify-center transition-all duration-300">
             <svg
-              className="h-8 w-auto fill-white"
+              className="h-8 w-auto fill-ln-text-color"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -31,7 +31,7 @@ export function Integrations() {
           {/* Oracle */}
           <div className="flex items-center justify-center transition-all duration-300">
             <svg
-              className="h-6 w-auto fill-white"
+              className="h-6 w-auto fill-ln-text-color"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -43,13 +43,13 @@ export function Integrations() {
           <div className="flex items-center justify-center transition-all duration-300">
             <div className="flex items-center gap-2">
               <svg
-                className="h-7 w-auto fill-white"
+                className="h-7 w-auto fill-ln-text-color"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M12 0L2.4 5.5v11L12 22l9.6-5.5v-11L12 0zm0 3.3l6.4 3.7v7.4L12 18.1 5.6 14.4V7L12 3.3z" />
               </svg>
-              <span className="text-white font-bold text-xl tracking-tighter">
+              <span className="text-ln-text-color font-bold text-xl tracking-tighter">
                 NETSUITE
               </span>
             </div>
@@ -59,13 +59,13 @@ export function Integrations() {
           <div className="flex items-center justify-center transition-all duration-300">
             <div className="flex items-center gap-2.5">
               <svg
-                className="h-7 w-auto fill-white"
+                className="h-7 w-auto fill-ln-text-color"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M11.4 24l7.9-14-13.3 4.6L11.4 24zM12.6 0L4.7 14l13.3-4.6L12.6 0z" />
               </svg>
-              <span className="text-white font-semibold text-lg tracking-tight">
+              <span className="text-ln-text-color font-semibold text-lg tracking-tight">
                 Dynamics 365
               </span>
             </div>

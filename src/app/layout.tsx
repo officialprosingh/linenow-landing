@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/contexts/theme-context";
+import { ThemeCustomizer } from "@/components/theme-customizer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,9 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${inter.variable} antialiased bg-ln-bg text-slate-100 font-sans selection:bg-ln-primary selection:text-black`}
+        className={`${inter.variable} antialiased bg-ln-bg font-sans selection:bg-ln-primary selection:text-black`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+          <ThemeCustomizer />
+        </ThemeProvider>
       </body>
     </html>
   );

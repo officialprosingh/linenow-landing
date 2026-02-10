@@ -31,7 +31,7 @@ export function Footer() {
               <span className="p-1.5 bg-ln-primary rounded-lg text-ln-bg">
                 <Zap className="w-5 h-5" strokeWidth={2.5} />
               </span>
-              <span className="text-white">LineNow</span>
+              <span className="text-ln-text-color">LineNow</span>
             </a>
             <p className="text-sm text-ln-subtext mb-6">
               Revolutionizing B2B commerce with intelligent order flows and
@@ -62,7 +62,7 @@ export function Footer() {
           {/* Link Columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="font-bold text-sm mb-6 uppercase tracking-widest text-white">
+              <h4 className="font-bold text-sm mb-6 uppercase tracking-widest text-ln-text-color">
                 {title}
               </h4>
               <ul className="space-y-4 text-sm text-ln-subtext">
@@ -86,7 +86,7 @@ export function Footer() {
           <p>&copy; 2024 LineNow LLC. All rights reserved.</p>
           <div className="flex gap-6">
             <span className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-500/50" />
+              <span className="w-1.5 h-1.5 rounded-full bg-ln-success/50" />
               Systems Operational
             </span>
             <span>English (US)</span>

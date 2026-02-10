@@ -14,7 +14,7 @@ export function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-ln-text-color">
           AI-Powered B2B <br />
           <span className="text-gradient">Order Operations</span>
         </h1>
@@ -32,7 +32,7 @@ export function Hero() {
           </Button>
           <Button
             variant="ghost"
-            className="w-full sm:w-auto px-8 py-4 h-auto glass text-white font-bold rounded-xl hover:bg-ln-slate-navy/40 transition-colors"
+            className="w-full sm:w-auto px-8 py-4 h-auto glass text-ln-text-color font-bold rounded-xl hover:bg-ln-slate-navy/40 transition-colors"
           >
             <PlayCircle className="text-ln-primary" />
             Book Demo
@@ -45,9 +45,9 @@ export function Hero() {
           <div className="relative bg-ln-bg/80 border border-ln-slate-navy rounded-xl overflow-hidden shadow-2xl">
             {/* Browser Chrome */}
             <div className="flex items-center gap-1.5 px-4 py-3 bg-ln-slate-navy/30 border-b border-ln-slate-navy">
-              <div className="w-3 h-3 rounded-full bg-red-500/20" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500/20" />
-              <div className="w-3 h-3 rounded-full bg-green-500/20" />
+              <div className="w-3 h-3 rounded-full bg-ln-danger/20" />
+              <div className="w-3 h-3 rounded-full bg-ln-warning/20" />
+              <div className="w-3 h-3 rounded-full bg-ln-success/20" />
               <div className="ml-4 flex items-center gap-2 bg-ln-bg px-3 py-1 rounded text-[10px] text-ln-subtext border border-ln-slate-navy">
                 <Lock className="w-3 h-3" /> linenow.ai/dashboard/order-insights
               </div>
@@ -59,11 +59,11 @@ export function Hero() {
                 {/* AI Order Summary Card */}
                 <div className="glass p-6 rounded-xl border-ln-primary/20 bg-gradient-to-br from-ln-primary/5 to-ln-tertiary/5">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-bold text-lg flex items-center gap-2 text-white">
+                    <h3 className="font-bold text-lg flex items-center gap-2 text-ln-text-color">
                       <Sparkles className="w-5 h-5 text-ln-primary" />
                       AI Order Summary
                     </h3>
-                    <span className="px-2 py-1 bg-green-500/10 text-green-400 text-xs rounded-full border border-green-500/20">
+                    <span className="px-2 py-1 bg-ln-success/10 text-ln-success text-xs rounded-full border border-ln-success/20">
                       High Confidence
                     </span>
                   </div>
@@ -83,7 +83,7 @@ export function Hero() {
                     <span className="text-[10px] uppercase tracking-widest text-ln-subtext">
                       Live Accuracy
                     </span>
-                    <div className="text-2xl font-bold mt-1 text-white">
+                    <div className="text-2xl font-bold mt-1 text-ln-text-color">
                       99.98%
                     </div>
                   </div>
@@ -91,7 +91,7 @@ export function Hero() {
                     <span className="text-[10px] uppercase tracking-widest text-ln-subtext">
                       Time Saved
                     </span>
-                    <div className="text-2xl font-bold mt-1 text-white">
+                    <div className="text-2xl font-bold mt-1 text-ln-text-color">
                       14.2 hrs
                     </div>
                   </div>
@@ -100,7 +100,7 @@ export function Hero() {
 
               {/* Active Syncing Sidebar */}
               <div className="glass p-6 rounded-xl">
-                <h4 className="font-bold text-sm mb-4 text-slate-200">
+                <h4 className="font-bold text-sm mb-4 text-ln-text-color">
                   Active Syncing
                 </h4>
                 <div className="space-y-4">

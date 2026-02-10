@@ -30,7 +30,7 @@ export function FAQ() {
   return (
     <section className="py-24">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-extrabold text-center mb-12 text-white">
+        <h2 className="text-3xl font-extrabold text-center mb-12 text-ln-text-color">
           Frequently Asked Questions
         </h2>
         <Accordion type="single" collapsible defaultValue="item-0">
@@ -40,7 +40,7 @@ export function FAQ() {
               value={`item-${index}`}
               className="glass px-6 rounded-xl border-ln-slate-navy mb-4"
             >
-              <AccordionTrigger className="text-white font-bold hover:no-underline">
+              <AccordionTrigger className="text-ln-text-color font-bold hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-ln-subtext leading-relaxed">

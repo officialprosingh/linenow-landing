@@ -28,7 +28,7 @@ export function ComparisonTable() {
     <section className="py-24 border-t border-ln-slate-navy">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-ln-text-color">
             LineNow vs Legacy Systems
           </h2>
           <p className="text-ln-subtext">
@@ -56,7 +56,7 @@ export function ComparisonTable() {
                   key={row.feature}
                   className="border-b border-ln-slate-navy/50"
                 >
-                  <td className="py-6 px-4 font-medium text-white">
+                  <td className="py-6 px-4 font-medium text-ln-text-color">
                     {row.feature}
                   </td>
                   <td className="py-6 px-4">

@@ -31,7 +31,7 @@ export function Features() {
   return (
     <section className="py-24" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-5xl font-extrabold mb-16 text-white">
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-16 text-ln-text-color">
           Built for High-Growth Operations
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -43,7 +43,7 @@ export function Features() {
               <div className="w-12 h-12 bg-ln-primary/10 rounded-xl flex items-center justify-center mb-6 text-ln-primary group-hover:bg-ln-primary group-hover:text-ln-bg transition-all">
                 <feature.icon className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">
+              <h3 className="text-xl font-bold mb-3 text-ln-text-color">
                 {feature.title}
               </h3>
               <p className="text-ln-subtext text-sm leading-relaxed">

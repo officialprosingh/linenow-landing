@@ -14,7 +14,7 @@ export function Navbar() {
               <span className="p-1.5 bg-ln-primary rounded-lg">
                 <Zap className="w-6 h-6 text-ln-bg" strokeWidth={2.5} />
               </span>
-              <span className="text-white">
+              <span className="text-ln-text-color">
                 LineNow<span className="text-ln-primary">.</span>
               </span>
             </a>

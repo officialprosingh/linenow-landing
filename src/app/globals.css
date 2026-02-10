@@ -10,14 +10,18 @@
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 
-  /* LineNow brand colors */
-  --color-ln-primary: #92B8F8;
-  --color-ln-secondary: #708DBD;
-  --color-ln-tertiary: #566C91;
-  --color-ln-bg: #030304;
-  --color-ln-slate-navy: #2A3546;
-  --color-ln-deep-blue-gray: #3D4D67;
-  --color-ln-subtext: #94A3B8;
+  /* LineNow brand colors - reference CSS variables for dynamic updates */
+  --color-ln-primary: var(--ln-primary);
+  --color-ln-secondary: var(--ln-secondary);
+  --color-ln-tertiary: var(--ln-tertiary);
+  --color-ln-bg: var(--ln-bg);
+  --color-ln-slate-navy: var(--ln-slate-navy);
+  --color-ln-deep-blue-gray: var(--ln-deep-blue-gray);
+  --color-ln-subtext: var(--ln-subtext);
+  --color-ln-text-color: var(--ln-text-color);
+  --color-ln-success: var(--ln-success);
+  --color-ln-warning: var(--ln-warning);
+  --color-ln-danger: var(--ln-danger);
 
   /* shadcn tokens */
   --color-sidebar-ring: var(--sidebar-ring);
@@ -59,6 +63,19 @@
 }
 
 :root {
+  /* LineNow base colors - can be dynamically updated */
+  --ln-primary: #92B8F8;
+  --ln-secondary: #708DBD;
+  --ln-tertiary: #566C91;
+  --ln-bg: #030304;
+  --ln-slate-navy: #2A3546;
+  --ln-deep-blue-gray: #3D4D67;
+  --ln-subtext: #94A3B8;
+  --ln-text-color: #F1F5F9;
+  --ln-success: #10B981;
+  --ln-warning: #F59E0B;
+  --ln-danger: #EF4444;
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -136,23 +153,24 @@
   }
 }
 
-/* LineNow custom utility classes */
+/* LineNow custom utility classes - using CSS variables for dynamic updates */
 .glass {
-  background: rgba(42, 53, 70, 0.2);
+  background: color-mix(in srgb, var(--ln-slate-navy) 20%, transparent);
   backdrop-filter: blur(12px);
-  border: 1px solid #2A3546;
+  border: 1px solid var(--ln-slate-navy);
 }
 
 .hero-gradient {
-  background: radial-gradient(circle at 50% 50%, rgba(146, 184, 248, 0.08) 0%, rgba(3, 3, 4, 1) 80%);
+  background: radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--ln-primary) 8%, transparent) 0%, var(--ln-bg) 80%);
 }
 
 .glow-accent {
-  box-shadow: 0 0 25px rgba(146, 184, 248, 0.2);
+  box-shadow: 0 0 25px color-mix(in srgb, var(--ln-primary) 20%, transparent);
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #92B8F8, #708DBD);
+  background: linear-gradient(135deg, var(--ln-primary) 0%, var(--ln-secondary) 50%, var(--ln-tertiary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
